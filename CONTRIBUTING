@@ -1,0 +1,29 @@
+I don't really know what I'm doing here but I want to try and give credit where credit is due.
+Here are the external projects that I'm using here:
+
+ - Bootswatch
+    - https://github.com/thomaspark/bootswatch
+    - https://bootswatch.com/
+
+ - Bootstrap
+   - https://github.com/twbs
+   - https://getbootstrap.com/
+
+ - JQuery
+   - https://github.com/jquery/jquery
+   - https://jquery.com/
+
+ - LiteDB
+   - https://github.com/mbdavid/LiteDB
+   - https://www.litedb.org/
+
+ - Electron
+   - https://github.com/electron
+   - https://www.electronjs.org/
+
+ - Electron.NET
+   - https://github.com/ElectronNET/Electron.NET
+
+ - Popper.JS
+   - https://github.com/popperjs/popper-core
+   - https://popper.js.org/
