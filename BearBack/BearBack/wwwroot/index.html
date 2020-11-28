@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Umami - e621 Viewer</title>
+    <link rel="stylesheet" href="/lib/bootswatch/dist/cyborg/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/lib/fontawesome/dist/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/site.css"/>
+    </head>
+  <body>
+    <header>
+      <!-- top nav -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><i class="fas fa-bone"></i>&nbsp;Umami</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-photo-video"></i>&nbsp;Posts <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-paint-brush"></i>&nbsp;Saved Authors</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <button class="btn btn-success shadow my-2 my-sm-0">Sign in <i class="fas fa-sign-in-alt"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+      <!-- main body for content -->
+      <h1>Oh hi there <i class="fas fa-user-shield"></i></h1>
+      @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+      <div class="container">
+          &copy; 2020 - BearBack - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+      </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/popper/dist/popper.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+  </body>
+</html>
