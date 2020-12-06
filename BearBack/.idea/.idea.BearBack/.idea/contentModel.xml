@@ -29,6 +29,24 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Services" t="Include">
+          <e p="e621_e926" t="Include">
+            <e p="Client.cs" t="Include" />
+            <e p="PostModels" t="Include">
+              <e p="Post.cs" t="Include" />
+              <e p="PostAlternates.cs" t="Include" />
+              <e p="PostFile.cs" t="Include" />
+              <e p="PostFlags.cs" t="Include" />
+              <e p="PostPreview.cs" t="Include" />
+              <e p="PostRelationships.cs" t="Include" />
+              <e p="PostSample.cs" t="Include" />
+              <e p="PostScore.cs" t="Include" />
+              <e p="PostTags.cs" t="Include" />
+            </e>
+            <e p="PostsRequest.cs" t="Include" />
+            <e p="PostsResponse.cs" t="Include" />
+          </e>
+        </e>
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
