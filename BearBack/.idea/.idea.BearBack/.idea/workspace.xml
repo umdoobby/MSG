@@ -23,23 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c4df5c8-a371-40a4-bffe-c8c1ad032829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/Post.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostAlternates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostFile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostFlags.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostPreview.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostRelationships.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostSample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostScore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/PostTags.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostsRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BearBack/Services/e621_e926/PostsResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BearBack/Controllers/e621Controller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BearBack/Services/StaticSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BearBack/Services/UserSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BearBack/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BearBack/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BearBack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BearBack/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BearBack/BearBack.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/BearBack.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearBack/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BearBack/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BearBack/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BearBack/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BearBack/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BearBack/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +72,12 @@
         <option value="$PROJECT_DIR$/BearBack/Services/e621_e926/PostModels/Post.cs" />
         <option value="$PROJECT_DIR$/BearBack/Services/e621_e926/PostsResponse.cs" />
         <option value="$PROJECT_DIR$/BearBack/Services/e621_e926/PostsRequest.cs" />
+        <option value="$PROJECT_DIR$/BearBack/Services/StaticSettings.cs" />
+        <option value="$PROJECT_DIR$/BearBack/Controllers/e621Controller.cs" />
+        <option value="$PROJECT_DIR$/BearBack/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/BearBack/Startup.cs" />
+        <option value="$PROJECT_DIR$/BearBack/Program.cs" />
+        <option value="$PROJECT_DIR$/BearBack/Services/UserSettings.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +92,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -141,6 +145,7 @@
       <workItem from="1606364449701" duration="755000" />
       <workItem from="1606785347675" duration="2508000" />
       <workItem from="1606870978230" duration="11818000" />
+      <workItem from="1607235050622" duration="5895000" />
     </task>
     <servers />
   </component>
@@ -169,21 +174,25 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="839" y="478" width="534" height="307" key="#Custom_Plugin_Repositories/0.0.1920.1160/1920.0.1920.1040@0.0.1920.1160" timestamp="1606795902526" />
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1606786515936">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607240415441">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607240415441" />
     <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1040@0.0.1920.1160" timestamp="1606786515936" />
-    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1606786515936">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607240415441">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607240415441" />
     <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1040@0.0.1920.1160" timestamp="1606786515936" />
-    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1606786515936">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607240415441">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607240415441" />
     <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1040@0.0.1920.1160" timestamp="1606786515936" />
-    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1606786515936">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607240415441">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607240415441" />
     <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1040@0.0.1920.1160" timestamp="1606786515936" />
     <state x="461" y="224" key="SettingsEditor" timestamp="1606795931584">
       <screen x="0" y="0" width="1920" height="1160" />
