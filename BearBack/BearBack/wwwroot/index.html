@@ -1,64 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Umami - e621 Viewer</title>
-    <link rel="stylesheet" href="/lib/bootswatch/dist/cyborg/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/lib/fontawesome/dist/css/all.min.css"/>
-    <link rel="stylesheet" href="/css/site.css"/>
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MSG Imageboard Viewer · e621.net</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="/lib/fontawesome/dist/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/css/site.css" rel="stylesheet">
+    
+  </head>
   <body>
-    <header>
-      <!-- top nav -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><i class="fas fa-bone"></i>&nbsp;Umami</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">MSG Imageboard Viewer · e621</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#"><i class="fas fa-cogs"></i> &nbsp;Settings</a>
+    </li>
+  </ul>
+</header>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fas fa-photo-video"></i>&nbsp;Posts <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-paint-brush"></i>&nbsp;Saved Authors</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-          <div class="my-2 my-lg-0">
-            <button class="btn btn-success shadow my-2 my-sm-0">Sign in <i class="fas fa-sign-in-alt"></i></button>
-          </div>
-        </div>
-      </nav>
-    </header>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fas fa-home"></i>
+              Posts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-pepper-hot"></i>
+              Hot
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-fire-alt"></i>
+              Popular
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-crown"></i>
+              Favorites
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-upload"></i>
+              Upload
+            </a>
+          </li>
+        </ul>
 
-    <main role="main" class="pb-3">
-      <!-- main body for content -->
-      <h1>Oh hi there <i class="fas fa-user-shield"></i></h1>
-      @RenderBody()
-    </main>
-
-    <footer class="border-top border-light footer text-muted">
-      <div class="container">
-          &copy; 2020 - BearBack - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved Searches</span>
+          <a class="link-secondary" href="#" aria-label="Add a new search">
+            <i class="far fa-plus-square"></i>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-toilet"></i>
+              Lol Poopoo PeePee
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-toilet"></i>
+              Lol Poopoo PeePee
+            </a>
+          </li>
+        </ul>
+        
       </div>
-    </footer>
+    </nav>
 
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Blacklist</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <i class="far fa-calendar-alt"></i>
+            This search
+          </button>
+        </div>
+      </div>
+
+      <h2>Section title</h2>
+      <p>Test</p>
+      
+    </main>
+  </div>
+</div>
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/popper/dist/popper.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/site.js" asp-append-version="true"></script>
   </body>
 </html>

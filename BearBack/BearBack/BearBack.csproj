@@ -15,10 +15,7 @@
       <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0-dev-00839" />
       <PackageReference Include="Serilog.Sinks.Debug" Version="1.0.2-dev-00020" />
       <PackageReference Include="Serilog.Sinks.File" Version="5.0.0-dev-00905" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Views\e621" />
+      <PackageReference Include="System.Text.Json" Version="5.0.0" />
     </ItemGroup>
 
 </Project>

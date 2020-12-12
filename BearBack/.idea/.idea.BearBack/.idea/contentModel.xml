@@ -3,6 +3,8 @@
   <component name="ContentModelStore">
     <e p="C:\Users\umdoo\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\umdoo\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_BearBack.-1923068249.00" t="ExcludeRecursive" />
+    <e p="C:\Users\umdoo\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\umdoo\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
     <e p="C:\Users\umdoo\Documents\GitHub\bears-den\BearBack" t="IncludeFlat">
       <e p="BearBack" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -14,6 +16,9 @@
           <e p="HomeController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="e621Models" t="Include">
+            <e p="IndexModel.cs" t="Include" />
+          </e>
           <e p="ErrorViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -52,7 +57,9 @@
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
-          <e p="e621" t="Include" />
+          <e p="e621" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
@@ -65,6 +72,7 @@
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
+            <e p="site-old.css" t="Include" />
             <e p="site.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
@@ -75,25 +83,50 @@
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
               <e p="dist" t="Include">
+                <e p="bs-old.zip" t="Include" />
                 <e p="css" t="Include">
                   <e p="bootstrap-grid.css" t="Include" />
                   <e p="bootstrap-grid.css.map" t="Include" />
                   <e p="bootstrap-grid.min.css" t="Include" />
                   <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-grid.rtl.css" t="Include" />
+                  <e p="bootstrap-grid.rtl.css.map" t="Include" />
+                  <e p="bootstrap-grid.rtl.min.css" t="Include" />
+                  <e p="bootstrap-grid.rtl.min.css.map" t="Include" />
                   <e p="bootstrap-reboot.css" t="Include" />
                   <e p="bootstrap-reboot.css.map" t="Include" />
                   <e p="bootstrap-reboot.min.css" t="Include" />
                   <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.rtl.css" t="Include" />
+                  <e p="bootstrap-reboot.rtl.css.map" t="Include" />
+                  <e p="bootstrap-reboot.rtl.min.css" t="Include" />
+                  <e p="bootstrap-reboot.rtl.min.css.map" t="Include" />
+                  <e p="bootstrap-utilities.css" t="Include" />
+                  <e p="bootstrap-utilities.css.map" t="Include" />
+                  <e p="bootstrap-utilities.min.css" t="Include" />
+                  <e p="bootstrap-utilities.min.css.map" t="Include" />
+                  <e p="bootstrap-utilities.rtl.css" t="Include" />
+                  <e p="bootstrap-utilities.rtl.css.map" t="Include" />
+                  <e p="bootstrap-utilities.rtl.min.css" t="Include" />
+                  <e p="bootstrap-utilities.rtl.min.css.map" t="Include" />
                   <e p="bootstrap.css" t="Include" />
                   <e p="bootstrap.css.map" t="Include" />
                   <e p="bootstrap.min.css" t="Include" />
                   <e p="bootstrap.min.css.map" t="Include" />
+                  <e p="bootstrap.rtl.css" t="Include" />
+                  <e p="bootstrap.rtl.css.map" t="Include" />
+                  <e p="bootstrap.rtl.min.css" t="Include" />
+                  <e p="bootstrap.rtl.min.css.map" t="Include" />
                 </e>
                 <e p="js" t="Include">
                   <e p="bootstrap.bundle.js" t="Include" />
                   <e p="bootstrap.bundle.js.map" t="Include" />
                   <e p="bootstrap.bundle.min.js" t="Include" />
                   <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.esm.js" t="Include" />
+                  <e p="bootstrap.esm.js.map" t="Include" />
+                  <e p="bootstrap.esm.min.js" t="Include" />
+                  <e p="bootstrap.esm.min.js.map" t="Include" />
                   <e p="bootstrap.js" t="Include" />
                   <e p="bootstrap.js.map" t="Include" />
                   <e p="bootstrap.min.js" t="Include" />
