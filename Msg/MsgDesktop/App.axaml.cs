@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -10,6 +11,7 @@ namespace MsgDesktop
     {
         public override void Initialize()
         {
+            Console.WriteLine("Starting");
             AvaloniaXamlLoader.Load(this);
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Logging;
 using Avalonia.ReactiveUI;
 
 namespace MsgDesktop
@@ -17,7 +18,7 @@ namespace MsgDesktop
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToTrace()
+                .LogToTrace(LogEventLevel.Debug, LogArea.Property, LogArea.Layout)
                 .UseReactiveUI();
     }
 }
